@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent {
+  IsUserLoggedIn: boolean = true;
+
+  toggleLogin() {
+    this.IsUserLoggedIn = !this.IsUserLoggedIn;
+  }
 }
