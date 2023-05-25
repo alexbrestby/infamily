@@ -1,1 +1,7 @@
-<p>gallery works!</p>
+<div class="gallery">
+  <mat-grid-list cols="3" rowHeight="300px">
+    <mat-grid-tile *ngFor="let image of images">
+      <img [src]="image.url" alt="{{ image.alt }}" width="100%" height="100%">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

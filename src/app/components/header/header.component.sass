@@ -1,9 +1,18 @@
 .header
+  position: relative
   display: flex
   align-items: center
   justify-content: space-between
   width: 100%
   margin-bottom: 20px
+  &:after
+    position: absolute
+    content: ""
+    left: 1%
+    top: calc(100% + 10px)
+    width: 98%
+    height: 3px
+    background-color: #415578
 
 .nav-ul
   display: flex
@@ -16,8 +25,10 @@
     margin-right: 20px
     color: #415578
     cursor: pointer
-    min-width: 120px
     font-weight: 400
+    &:last-child
+      margin-right: 0
+      min-width: 105px
     &:hover
       color: #91504d
     a

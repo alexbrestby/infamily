@@ -3,11 +3,12 @@
   <nav>
     <ul class="nav-ul">
       <li><mat-icon>home</mat-icon><a routerLink="/">Главная</a></li>
-      <li><mat-icon>person</mat-icon><a routerLink="/about">Обо мне</a></li>
+      <li><mat-icon>photo_library</mat-icon><a routerLink="/gallery">Галерея</a></li>
       <li><mat-icon>mail</mat-icon><a routerLink="/contact">Контакт</a></li>
+      <!-- <li><mat-icon>person</mat-icon><a routerLink="/about">Обо мне</a></li> -->
       <li (click)="toggleLogin()"><mat-icon>verified_user</mat-icon>
-        <a *ngIf="IsUserLoggedIn; else elseBlock">Вход</a>
-        <ng-template #elseBlock><a>Выход</a></ng-template>
+        <a *ngIf="IsUserLoggedIn; else elseBlock">Войти</a>
+        <ng-template #elseBlock><a>Выйти</a></ng-template>
       </li>
     </ul>
   </nav>
