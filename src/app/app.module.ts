@@ -13,6 +13,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { NgxMasonryModule } from 'ngx-masonry';
+import { ImageModalComponent } from './components/image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     ContactComponent,
     NotFoundComponent,
     GalleryComponent,
+    ImageModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     MatIconModule,
     MatMenuModule,
     MatGridListModule,
+    NgxMasonryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
