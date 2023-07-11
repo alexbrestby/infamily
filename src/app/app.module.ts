@@ -15,6 +15,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NgxMasonryModule } from 'ngx-masonry';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
+import { ImageButtonComponent } from './components/image-button/image-button.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ImageModalComponent } from './components/image-modal/image-modal.compon
     NotFoundComponent,
     GalleryComponent,
     ImageModalComponent,
+    ImageButtonComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@
   <ngx-masonry class="masonry-container" [options]="masonryOptions" [ordered]="true">
     <div ngxMasonryItem class="masonry-item" *ngFor="let image of images">
       <img [src]="image.url" alt="{{ image.alt }}">
+      <app-image-button color="lightslategrey" text="toggle" (btnClick)="toggleImageInfo(image.url)"></app-image-button>
     </div>
   </ngx-masonry>
 </div>
